@@ -1,0 +1,81 @@
+$fontColor: #e7fcf5;
+$btnColor: #e9e3e3;
+
+.loginpanel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+
+	width: 300px;
+	height: 400px;
+	background-color: rgba(0, 0, 0, 0.45);
+	border-radius: 12px;
+	box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 1);
+	margin: 20px;
+
+	h1 {
+		letter-spacing: 1px;
+		font-size: 3rem;
+		color: $fontColor;
+		margin: 25px;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: 85%;
+
+		label {
+			display: block;
+			font-size: 1.2rem;
+			color: $fontColor;
+			text-align: left;
+		}
+		input {
+			margin-top: 20px;
+			width: 80%;
+			height: 35px;
+
+			background-color: transparent;
+			border: none;
+			border-bottom: 2px solid black;
+			border-color: none;
+
+			text-align: center;
+			font-size: 1.6rem;
+			color: $fontColor;
+		}
+
+		input:focus {
+			outline: none;
+		}
+
+		input::placeholder {
+			color: white;
+			font-size: 1.4rem;
+		}
+		button {
+			background-color: transparent;
+			border: none;
+			font-size: 40px;
+			cursor: pointer;
+			color: $btnColor;
+			transition: 0.3s;
+			padding: 10px;
+		}
+
+		button:hover {
+			color: $fontColor;
+			transform: translateX(10px);
+		}
+
+		.error {
+		
+			color: rgb(216, 15, 15);
+			font-size: 1.4rem;
+			letter-spacing: 0.5px;
+		}
+	}
+}

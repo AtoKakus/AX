@@ -1,0 +1,97 @@
+$fontColor: #e7fcf5;
+.calculator-form {
+	width: 100%;
+	height: 85%;
+	// background-color: blue;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+
+	.credit-form {
+		width: 100%;
+		// background-color: red;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		width: 90%;
+
+		label {
+			display: block;
+		}
+
+		h2 {
+			color: #0edd98;
+			font-size: 3rem;
+		}
+
+		button {
+			border-color: #0edd98;
+			font-size: 1.4rem;
+			letter-spacing: 0.7px;
+			color: $fontColor;
+			background: none;
+			border-radius: 12px;
+			padding: 12px 60px;
+			margin-bottom: 30px;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+
+		button:hover {
+			transform: scale(1.2);
+		}
+
+		.credit-form-number {
+			label {
+				font-size: 1.8rem;
+				color: $fontColor;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+
+			input {
+				font-size: 1.6rem;
+				width: 80%;
+				background: none;
+				border: none;
+				border-bottom: 2px solid black;
+				text-align: center;
+				color: $fontColor;
+			}
+
+			input:focus {
+				outline: none;
+			}
+
+			input::placeholder {
+				font-size: 1rem;
+			}
+		}
+
+		.credit-form {
+			.label-title {
+				font-size: 1.8rem;
+				color: $fontColor;
+				margin-bottom: 15px;
+				text-align: center;
+			}
+			.credit-form-box {
+				display: flex;
+				justify-content: space-evenly;
+
+				label {
+					font-size: 1.4rem;
+
+					color: #a4d1c2;
+					input {
+						padding: 5px;
+					}
+				}
+			}
+		}
+	}
+}

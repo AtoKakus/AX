@@ -1,0 +1,19 @@
+$fontColor: #1fce93;
+$btnColor: #e9e3e3;
+
+.calculatorPage {
+	width: 350px;
+	height: 600px;
+	border-radius: 12px;
+	background-color: rgba(0, 0, 0, 0.55);
+	box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 1);
+	margin: 15px;
+
+	h1 {
+		height: 10%;
+		letter-spacing: 1px;
+		font-size: 3rem;
+		color: $fontColor;
+		margin-top: 30px;
+	}
+}
