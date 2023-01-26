@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-function CalculatorFormASS({ASSValueHandler}) {
+function CalculatorFormASS({ ASSValueHandler }) {
 	const [valueASS, setValueASS] = useState("")
 
 	const valueASSHandler = (e) => {
@@ -10,11 +10,10 @@ function CalculatorFormASS({ASSValueHandler}) {
 
 	return (
 		<div className="credit-form">
-				
 			<label className="label-title">Czy sprzedałeś ASS'a? </label>
 			<div className="credit-form-box">
 				<div>
-					<input  onChange={valueASSHandler} type="radio" name="ass" value="0" />
+					<input onChange={valueASSHandler} type="radio" name="ass" value="0" />
 					<label>Nie</label>
 				</div>
 				<div>
@@ -22,7 +21,7 @@ function CalculatorFormASS({ASSValueHandler}) {
 					<label>ASS1</label>
 				</div>
 				<div>
-					<input onChange={valueASSHandler} type="radio" name="ass" value="3000" />
+					<input onChange={valueASSHandler} type="radio" name="ass" value="2000" />
 					<label>ASS3</label>
 				</div>
 			</div>

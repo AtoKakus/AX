@@ -14,6 +14,8 @@ function CalculatorForm() {
 	const [ASSValue, setASSValue] = useState("")
 	const [earnValue, setEarnValue] = useState(0)
 
+	const payValue = 3.3;
+
 	const creditValueHandler = (credit) => {
 		setCreditValue(credit)
 	}
@@ -36,10 +38,9 @@ function CalculatorForm() {
 		const newRPOValue = parseInt(RPOValue)
 		const newASSValue = parseInt(ASSValue)
 
-		const earn = ((creditValue * newRPOValue + newASSValue) / 1000) * multipierValue
+		const earn = ((creditValue * newRPOValue + newASSValue) / 1000) * multipierValue * payValue
 
-		setEarnValue(earn.toFixed(2
-			))
+		setEarnValue(earn.toFixed(2))
 	}
 
 	return (

@@ -35,7 +35,7 @@ function LoginPanel({ logHandler, validation }) {
 
 	return (
 		<div className="loginpanel">
-			<h1>Logowanie</h1>
+			<h1>Logowanie v0.1</h1>
 			<form onSubmit={submitHandler}>
 				<div>
 					<input onChange={loginHandler} placeholder="Wpisz login..." type="text" value={userName} />
