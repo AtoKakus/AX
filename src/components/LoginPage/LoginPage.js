@@ -8,7 +8,7 @@ import "./scss/LoginPage.scss"
 //// kod///
 
 function LoginPage() {
-	const [validation, setValidation] = useState(false)
+	const [validation, setValidation] = useState(true)
 
 	const logHandler = (userName, userPassword) => {
 		if (userName === "ax" && userPassword === "euro") {
